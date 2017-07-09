@@ -17,7 +17,8 @@ import static org.junit.Assert.assertTrue;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-public class ExampleUnitTest {
+public class ContractClassUnitTest {
+
     @Test
     public void inner_class_exists() throws Exception {
         Class[] innerClasses = WaitlistContract.class.getDeclaredClasses();
@@ -47,4 +48,5 @@ public class ExampleUnitTest {
             assertTrue("All members in the contract class should be static", Modifier.isStatic(field.getModifiers()));
         }
     }
+
 }
